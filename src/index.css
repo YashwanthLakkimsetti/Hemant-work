@@ -318,3 +318,10 @@ width: 30%;
   right: 0;
 
 }
+
+.Graph{
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  top:350px;
+}

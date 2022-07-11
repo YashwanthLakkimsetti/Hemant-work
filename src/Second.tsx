@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Navbar";
 import Seco from "./SecondRight";
-
+import Sa from "./Sample"
 function Second(){
     return(
         <div>
@@ -78,6 +78,7 @@ function Second(){
            </div>
            <div className="split right">
             <Seco />
+            <Sa className="Graph" />
            </div>
         </div>
     )

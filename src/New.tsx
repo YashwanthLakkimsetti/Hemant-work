@@ -21,16 +21,19 @@ import Horizontal from './Horizontal';
 import Vertical from "./VerticalHome"
 import Dyna from "./Dynamic";
 import Second from "./Second";
+import Ne from "./LineChart"
 function New(){
   return(
     <div>
-  {/* <Se /> */}
-  <Second />
+      {/* <Sa /> */}
+  <Se />
+  {/* <Second /> */}
+  {/* <Ne /> */}
     {/* <Nav /> */}
       {/* <Vertical /> */}
     {/* <Dashboard />
     <Status />
-  
+
   <Input />
   <Dyna /> */}
   {/* <Horizontal /> */}

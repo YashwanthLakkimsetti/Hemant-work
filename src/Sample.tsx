@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 
-import { IgrLegendModule, IgrCategoryChartModule } from 'igniteui-react-charts';
+
+import { IgrLegendModule, IgrCategoryChartModule, IgrDataChartInteractivityModule } from 'igniteui-react-charts';
 import { IgrLegend, IgrCategoryChart } from 'igniteui-react-charts';
 import { CountryRenewableElectricityItem, CountryRenewableElectricity } from './CountryRenewableElectricity';
 
@@ -10,7 +10,8 @@ import { CountryRenewableElectricityItem, CountryRenewableElectricity } from './
 
 const mods: any[] = [
     IgrLegendModule,
-    IgrCategoryChartModule
+    IgrCategoryChartModule,
+    IgrDataChartInteractivityModule
 ];
 mods.forEach((m) => m.register());
 
@@ -35,48 +36,28 @@ export default class Sample extends React.Component<any, any> {
 
     public render(): JSX.Element {
         return (
-        <div className="container">
+        <div className="container sample Graph">
 
-            {/* <div className="legend-title ">
-            PH 
-            </div> */}
+          
 
-            {/* <div className="legend">
-                <IgrLegend
-                    orientation="Horizontal"
-                    ref={this.legendRef}>
-                </IgrLegend>
-            </div> */}
+         
 
             <div className="container fill">
-            
-{/*          
-            <br /> */}
-            
-            {/* <span className="heading">6.8 units</span>
-            <br />
-            <span  className="heading1">Limits: 6.5 - 9.0 units</span>
-          </text>
-          <br /> */}
-          
                 <IgrCategoryChart
-                    chartType="Line"
-                    yAxisLabelLeftMargin="0"
-                    yAxisTitleLeftMargin="10"
-                    yAxisTitleRightMargin="5"
-                    // yAxisTitle="Temprature "
+                    chartType="StepArea"
+                    isTransitionInEnabled="true"
+                    isCategoryHighlightingEnabled="true"
+                    yAxisTitle="TWh"
+                    titleLeftMargin="25"
+                    titleTopMargin="10"
+                    titleBottomMargin="10"
                     dataSource={this.countryRenewableElectricity}
-                    includedProperties={["year", "Bangalore"]}
                     legend={this.legend}
                     isHorizontalZoomEnabled="false"
                     isVerticalZoomEnabled="false"
-                    computedPlotAreaMarginMode="Series"
-                    yAxisMajorStroke="white"
-                 markerTypes="None"
-                 yAxisLabel=" "
-                   
-                    
-                    
+                    isSeriesHighlightingEnabled="true"
+                    titleAlignment="Left"
+                    crosshairsSnapToData="true"
                     ref={this.chartRef}>
                 </IgrCategoryChart>
             </div>
@@ -96,5 +77,7 @@ export default class Sample extends React.Component<any, any> {
 
 
 }
+
+
 
 
