@@ -14,17 +14,20 @@
     "lint": "eslint ./src/**/*.{ts,tsx}"
   },
   "dependencies": {
-    "igniteui-react-core": "16.16.0",
     "igniteui-react-charts": "16.16.0",
+    "igniteui-react-core": "16.16.0",
+    "igniteui-webcomponents": "^3.2.0",
+    "lit-html": "^2.2.0",
+    "radium": "^0.26.2",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "3.4.1",
-    "tslib": "^2.0.0",
-    "igniteui-webcomponents": "^3.2.0",
-    "lit-html": "^2.2.0"
+    "tslib": "^2.0.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
+    "@types/jquery": "^3.5.14",
     "@types/node": "^11.11.8",
     "@types/react": "^16.8.20",
     "@types/react-dom": "^16.8.3",

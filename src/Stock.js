@@ -1,5 +1,5 @@
-export const stockData = [{
-    "widgetName": "Temperature",
+ export const stockData = [{
+    "widgetName": "PH",
     "value": "24",
     "unit": "°C",
     "limit":{
@@ -9,7 +9,7 @@ export const stockData = [{
     
    },
    {
-    "widgetName": "Temperature",
+    "widgetName": "BOD",
     "value": "24",
     "unit": "°C",
     "limit":{

@@ -1,5 +1,5 @@
 import React from "react";
-import { stockData } from "./Json.";
+import { stockData } from "./Stock";
 import Sa from "./Sample";
 
 const CardConfig  = [

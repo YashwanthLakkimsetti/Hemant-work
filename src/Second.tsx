@@ -1,12 +1,103 @@
 import React from "react";
 import Nav from "./Navbar";
 import Seco from "./SecondRight";
-import Sa from "./Sample"
+import Sa from "./Sample";
+import { BrowserRouter as Router, Route, NavLink, Link} from "react-router-dom";
 function Second(){
+    const stockData = [{
+        "widgetName": "PH",
+        "value": "24",
+        "unit": "°C",
+        "limit":{
+        "value": "Limits",
+        "unit": "6.5 - 9.0 Units"
+        },
+        
+       },
+       {
+        "widgetName": "BOD",
+        "value": "24",
+        "unit": "°C",
+        "limit":{
+        "value": "Limits",
+        "unit": "6.5 - 9.0 Units"
+        },
+        
+        
+    },
+    {
+        "widgetName": "Temperature",
+        "value": "24",
+        "unit": "°C",
+        "limit":{
+        "value": "Limits",
+        "unit": "6.5 - 9.0 Units"
+        },
+    },
+    {
+        "widgetName": "Temperature",
+        "value": "24",
+        "unit": "°C",
+        "limit":{
+        "value": "Limits",
+        "unit": "6.5 - 9.0 Units"
+        },   
+    },{
+        "widgetName": "Temperature",
+        "value": "24",
+        "unit": "°C",
+        "limit":{
+        "value": "Limits",
+        "unit": "6.5 - 9.0 Units"
+        }, 
+    },
+    {
+        "widgetName": "Temperature",
+        "value": "24",
+        "unit": "°C",
+        "limit":{
+        "value": "Limits",
+        "unit": "6.5 - 9.0 Units"
+        }, 
+    },{
+        "widgetName": "pH",
+        "value": "24",
+        "unit": "°C",
+        "limit":{
+        "value": "Limits",
+        "unit": "6.5 - 9.0 Units"
+        }, 
+    },{
+        "widgetName": "pH",
+        "value": "24",
+        "unit": "°C",
+        "limit":{
+        "value": "Limits",
+        "unit": "6.5 - 9.0 Units"
+        }, 
+    },{
+        "widgetName": "pH",
+        "value": "24",
+        "unit": "°C",
+        "limit":{
+        "value": "Limits",
+        "unit": "6.5 - 9.0 Units"
+        }, 
+    },{
+        "widgetName": "Hemanth",
+        "value": "24",
+        "unit": "°C",
+        "limit":{
+        "value": "Limits",
+        "unit": "6.5 - 9.0 Units"
+        }, 
+    }
+    
+    ]
     return(
         <div>
            <Nav />
-           <div className="split left">
+            <div className="split left">
 
            <table>
            <tr>
@@ -79,8 +170,10 @@ function Second(){
            <div className="split right">
             <Seco />
             <Sa className="Graph" />
-           </div>
-        </div>
+           </div> 
+           
+          
+        </div> 
     )
 }
 export default Second;
